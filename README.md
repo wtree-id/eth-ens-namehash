@@ -11,12 +11,12 @@ A TypeScript library for generating Ethereum Name Service (ENS) namehashes per [
 ## Usage
 
 ```typescript
-import { hash, normalize } from '@wtree-id/eth-ens-namehash-ts'
-const hash = hash('foo.eth')
+import { hash, normalize } from '@wtree-id/eth-ens-namehash-ts';
+const hash = hash('foo.eth');
 
 // Also supports normalizing strings to ENS compatibility:
-const input = getUserInput()
-const normalized = normalize(input)
+const input = getUserInput();
+const normalized = normalize(input);
 ```
 
 ## Security Warning
@@ -33,4 +33,3 @@ namehash.normalize() doesn't automagically remap those, and so other precautions
 ## Development
 
 This module supports advanced TypeScript syntax, but exports an ES5-compatible module. To re-build the exported module after making changes, run `npm run bundle` (must have [browserify](http://browserify.org/) installed).
-

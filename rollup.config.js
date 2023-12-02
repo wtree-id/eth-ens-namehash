@@ -6,7 +6,7 @@ export default {
   output: {
     dir: 'dist',
     format: 'umd',
-    name: 'namehash'
+    name: 'namehash',
   },
-  plugins: [commonjs(), nodeResolve({ browser: true })]
+  plugins: [commonjs(), nodeResolve({ browser: true })],
 };

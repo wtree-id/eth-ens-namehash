@@ -5,6 +5,6 @@ module.exports = {
   moduleDirectories: ['node_modules'],
   transformIgnorePatterns: ['node_modules/(?!idna-uts46-hx)/'],
   transform: {
-    "^.+\\.mjs$": "ts-jest",
+    '^.+\\.mjs$': 'ts-jest',
   },
 };
