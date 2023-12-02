@@ -1,5 +1,5 @@
 import { keccak_256 } from '@noble/hashes/sha3';
-import { toUnicode } from 'idna-uts46-hx';
+import { toUnicode } from 'idna-uts46-hx/dist/index.cjs';
 import { uint8ArrayToHex } from './uint8Helpers';
 
 function namehash(inputName: string): string {
