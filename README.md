@@ -1,23 +1,22 @@
-# Eth ENS Namehash (Fork)
+# Eth ENS Namehash Typescript (Fork)
 
-A javascript library for generating Ethereum Name Service (ENS) namehashes per [spec](https://github.com/ethereum/EIPs/issues/137).
+A TypeScript library for generating Ethereum Name Service (ENS) namehashes per [spec](https://github.com/ethereum/EIPs/issues/137). Code is based on [eth-ens-namehash](https://github.com/Arachnid/eth-ens-namehash) by Nick Johnson.
 
-[Available on NPM](https://www.npmjs.com/package/@ensdomains/eth-ens-namehash)
+[Available on NPM](https://www.npmjs.com/package/@wtree-id/eth-ens-namehash-ts)
 
 ## Installation
 
-`npm install @ensdomains/eth-ens-namehash -S`
+`npm install @wtree-id/eth-ens-namehash-ts`
 
 ## Usage
 
-```javascript
-var namehash = require('@ensdomains/eth-ens-namehash')
-var hash = namehash.hash('foo.eth')
-// '0xde9b09fd7c5f901e23a3f19fecc54828e9c848539801e86591bd9801b019f84f'
+```typescript
+import { hash, normalize } from '@wtree-id/eth-ens-namehash-ts'
+const hash = hash('foo.eth')
 
 // Also supports normalizing strings to ENS compatibility:
-var input = getUserInput()
-var normalized = namehash.normalize(input)
+const input = getUserInput()
+const normalized = normalize(input)
 ```
 
 ## Security Warning
@@ -33,5 +32,5 @@ namehash.normalize() doesn't automagically remap those, and so other precautions
 
 ## Development
 
-This module supports advanced JavaScript syntax, but exports an ES5-compatible module. To re-build the exported module after making changes, run `npm run bundle` (must have [browserify](http://browserify.org/) installed).
+This module supports advanced TypeScript syntax, but exports an ES5-compatible module. To re-build the exported module after making changes, run `npm run bundle` (must have [browserify](http://browserify.org/) installed).
 
